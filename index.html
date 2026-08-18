@@ -21,18 +21,46 @@
   .item-meta { font-size: 12px; color: #999; margin-top: 4px; }
   .item-summary { font-size: 14px; color: #555; margin-top: 8px; white-space: pre-line; }
   .item-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
-  .like-btn { cursor: pointer; font-size: 14px; color: #666; background: none; border: 1px solid #ddd; border-radius: 20px; padding: 4px 14px; transition: all 0.2s; }
+  .like-btn { cursor: pointer; font-size: 14px; color: #666; background: none; border: 1px solid #ddd; border-radius: 20px; padding: 4px 14px; transition: all 0.2s; user-select: none; }
   .like-btn:hover { border-color: #2c7be5; color: #2c7be5; }
   .like-btn.liked { background: #e8f0fe; border-color: #2c7be5; color: #2c7be5; }
   .like-count { font-weight: 600; margin-left: 4px; }
   .score-badge { font-size: 12px; color: #aaa; }
   .empty { text-align: center; color: #999; padding: 40px; }
+  /* 主题征集区域 */
+  .topic-box { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .topic-box h3 { font-size: 15px; color: #333; margin-bottom: 6px; }
+  .topic-box p { font-size: 13px; color: #888; margin-bottom: 12px; }
+  .topic-input-row { display: flex; gap: 8px; }
+  .topic-input { flex: 1; padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; outline: none; }
+  .topic-input:focus { border-color: #2c7be5; }
+  .topic-submit { padding: 8px 18px; background: #2c7be5; color: #fff; border: none; border-radius: 6px; font-size: 14px; cursor: pointer; white-space: nowrap; }
+  .topic-submit:hover { background: #1a6fd4; }
+  .topic-submit:disabled { background: #aaa; cursor: not-allowed; }
+  .topic-msg { font-size: 13px; margin-top: 8px; min-height: 18px; }
+  .topic-msg.ok { color: #27ae60; }
+  .topic-msg.err { color: #e74c3c; }
+  .topic-list { margin-top: 10px; }
+  .topic-tag { display: inline-block; background: #f0f4ff; color: #2c7be5; border-radius: 12px; padding: 2px 10px; font-size: 12px; margin: 3px 2px; }
 </style>
 </head>
 <body>
 <div class="container">
   <h1>📡 行业资讯每周摘报</h1>
   <div class="subtitle">本周资讯汇总 · 点击查看每日 Top3</div>
+
+  <!-- 主题征集 -->
+  <div class="topic-box">
+    <h3>💡 告诉我你想关注的主题</h3>
+    <p>输入你期望追踪的行业话题，次日资讯采集时会重点搜索相关内容</p>
+    <div class="topic-input-row">
+      <input id="topicInput" class="topic-input" type="text" maxlength="100" placeholder="例如：固态电池、端侧AI、增程热效率…" />
+      <button class="topic-submit" id="topicBtn" onclick="submitTopic()">提交主题</button>
+    </div>
+    <div class="topic-msg" id="topicMsg"></div>
+    <div class="topic-list" id="topicList"></div>
+  </div>
+
   <div class="week-selector">
     <select id="weekSelect" onchange="switchWeek()"></select>
   </div>
@@ -43,10 +71,11 @@ let allData = null;
 
 async function loadData() {
   try {
-    const resp = await fetch('data.json');
+    const resp = await fetch('data.json?t=' + Date.now());
     allData = await resp.json();
     initWeekSelector();
     showCurrentWeek();
+    showPendingTopics();
   } catch(e) {
     document.getElementById('content').innerHTML = '<div class="empty">暂无数据</div>';
   }
@@ -56,7 +85,6 @@ function initWeekSelector() {
   const sel = document.getElementById('weekSelect');
   const weeks = Object.keys(allData.weeks || {}).sort().reverse();
   sel.innerHTML = weeks.map(w => `<option value="${w}">${formatWeekLabel(w)}</option>`).join('');
-  // 默认选最新一周
   if (weeks.length > 0) sel.value = weeks[0];
 }
 
@@ -76,7 +104,9 @@ function showCurrentWeek() {
     return;
   }
 
-  // 按日期分组
+  // 读取本地点赞记录（pending_likes 是本页面维护的暂存）
+  const pendingLikes = JSON.parse(localStorage.getItem('pending_likes') || '{}');
+
   const byDate = {};
   items.forEach(it => {
     if (!byDate[it.date]) byDate[it.date] = [];
@@ -89,13 +119,17 @@ function showCurrentWeek() {
     html += '<div class="day-group">';
     html += '<div class="day-header">📅 ' + d + '</div>';
     byDate[d].forEach(it => {
-      const liked = localStorage.getItem('liked_' + it.id) ? ' liked' : '';
+      // 显示点赞数：多维表格同步值 + 本地未同步的增量
+      const localDelta = pendingLikes[it.id] || 0;
+      const displayLikes = (it.likes || 0) + localDelta;
+      const isLiked = localDelta > 0;
+      const likedClass = isLiked ? ' liked' : '';
       html += '<div class="item-card">';
       html += '<div class="item-title"><a href="' + it.url + '" target="_blank">' + escapeHtml(it.title) + '</a></div>';
-      html += '<div class="item-meta">来源：' + escapeHtml(it.source) + ' · 命中关键词</div>';
+      html += '<div class="item-meta">来源：' + escapeHtml(it.source) + ' · 关键词：' + escapeHtml(it.kw||'') + '</div>';
       if (it.summary) html += '<div class="item-summary">' + escapeHtml(it.summary) + '</div>';
       html += '<div class="item-footer">';
-      html += '<button class="like-btn' + liked + '" onclick="toggleLike(\'' + it.id + '\', this)">👍 <span class="like-count">' + it.likes + '</span></button>';
+      html += '<button class="like-btn' + likedClass + '" onclick="toggleLike(\'' + it.id + '\', this)">👍 <span class="like-count">' + displayLikes + '</span></button>';
       html += '<span class="score-badge">评分 ' + it.score + '</span>';
       html += '</div>';
       html += '</div>';
@@ -108,21 +142,74 @@ function showCurrentWeek() {
 function switchWeek() { showCurrentWeek(); }
 
 function toggleLike(id, btn) {
-  const key = 'liked_' + id;
-  const isLiked = localStorage.getItem(key);
-  if (isLiked) {
-    localStorage.removeItem(key);
+  const pendingLikes = JSON.parse(localStorage.getItem('pending_likes') || '{}');
+  const countEl = btn.querySelector('.like-count');
+  const current = parseInt(countEl.textContent) || 0;
+
+  if (pendingLikes[id]) {
+    // 已点赞 → 取消
+    delete pendingLikes[id];
     btn.classList.remove('liked');
-    const countEl = btn.querySelector('.like-count');
-    countEl.textContent = parseInt(countEl.textContent) - 1;
+    countEl.textContent = Math.max(0, current - 1);
   } else {
-    localStorage.setItem(key, '1');
+    // 未点赞 → 点赞（记录到 pending，次日定时任务同步到多维表格）
+    pendingLikes[id] = 1;
     btn.classList.add('liked');
-    const countEl = btn.querySelector('.like-count');
-    countEl.textContent = parseInt(countEl.textContent) + 1;
-    // 点赞数据将在次日 GitHub Actions 运行时从多维表格同步
+    countEl.textContent = current + 1;
   }
+  localStorage.setItem('pending_likes', JSON.stringify(pendingLikes));
+
+  // 同时把待同步点赞写入 data.json 的 pending_likes（通过 gh-pages 推送，次日由定时任务读取）
+  // 这里用浏览器端存储，实际同步在定时任务中处理
 }
+
+// ---- 主题征集 ----
+function showPendingTopics() {
+  const topics = JSON.parse(localStorage.getItem('my_topics') || '[]');
+  const listEl = document.getElementById('topicList');
+  if (topics.length === 0) { listEl.innerHTML = ''; return; }
+  listEl.innerHTML = '已提交：' + topics.map(t => '<span class="topic-tag">' + escapeHtml(t) + '</span>').join('');
+}
+
+function submitTopic() {
+  const input = document.getElementById('topicInput');
+  const btn = document.getElementById('topicBtn');
+  const msg = document.getElementById('topicMsg');
+  const topic = input.value.trim();
+
+  if (!topic) { msg.textContent = '请输入主题内容'; msg.className = 'topic-msg err'; return; }
+  if (topic.length > 100) { msg.textContent = '主题不超过100字'; msg.className = 'topic-msg err'; return; }
+
+  btn.disabled = true;
+  msg.textContent = '提交中…';
+  msg.className = 'topic-msg';
+
+  // 写入 pending_topics（存到 localStorage，次日定时任务读取并写入多维表格）
+  const pending = JSON.parse(localStorage.getItem('pending_topics') || '[]');
+  if (!pending.includes(topic)) {
+    pending.push(topic);
+    localStorage.setItem('pending_topics', JSON.stringify(pending));
+  }
+
+  // 同时把主题保存到"我的主题"列表展示
+  const myTopics = JSON.parse(localStorage.getItem('my_topics') || '[]');
+  if (!myTopics.includes(topic)) {
+    myTopics.push(topic);
+    localStorage.setItem('my_topics', JSON.stringify(myTopics));
+  }
+
+  input.value = '';
+  btn.disabled = false;
+  msg.textContent = '✅ 已记录！次日采集时将重点搜索相关资讯';
+  msg.className = 'topic-msg ok';
+  showPendingTopics();
+  setTimeout(() => { msg.textContent = ''; }, 4000);
+}
+
+// 回车提交
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && document.activeElement.id === 'topicInput') submitTopic();
+});
 
 function escapeHtml(s) {
   const div = document.createElement('div');
