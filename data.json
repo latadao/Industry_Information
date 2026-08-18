@@ -1,0 +1,36 @@
+{
+  "weeks": {
+    "2026-W34": [
+      {
+        "id": "20260818-001",
+        "date": "2026-08-18",
+        "title": "RX5950XT/3DP-MATX",
+        "source": "GitHub",
+        "url": "https://github.com/RX5950XT/3DP-MATX",
+        "summary": "全3D列印microATX NAS機殼，由11個無螺絲組件構成。  \n實現無螺絲組裝與高度整合的儲存設備外殼解決方案。  \n基於FreeCAD參數化CSG建模，精準設計互鎖結構實現零螺絲組裝。",
+        "score": 8.05,
+        "likes": 0
+      },
+      {
+        "id": "20260818-002",
+        "date": "2026-08-18",
+        "title": "difrkaguilar/Convergence",
+        "source": "GitHub",
+        "url": "https://github.com/difrkaguilar/Convergence",
+        "summary": "该资讯主体是GitHub上一个名为Convergence的FreeCAD主题包。  \n它为用户提供深色界面与统一的UI偏好配置，提升视觉舒适度与操作效率。  \n通过自定义主题文件与偏好设置打包实现，无需修改核心代码即可应用。",
+        "score": 7.76,
+        "likes": 0
+      },
+      {
+        "id": "20260818-003",
+        "date": "2026-08-18",
+        "title": "malikOgunsakin785/35mm-Shaft-Pillow-Block-Bearing-CAD-Design",
+        "source": "GitHub",
+        "url": "https://github.com/malikOgunsakin785/35mm-Shaft-Pillow-Block-Bearing-CAD-Design",
+        "summary": "35毫米轴用枕块轴承组件的开源CAD设计  \n提供标准化轴承与外壳的精准装配方案  \n基于FreeCAD软件完成三维建模与部件集成",
+        "score": 7.63,
+        "likes": 0
+      }
+    ]
+  }
+}
