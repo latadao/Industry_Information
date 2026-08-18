@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>主题征集 · 两种方式对比</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+         background: #f5f7fa; color: #333; padding: 24px; }
+  h1 { text-align: center; font-size: 20px; margin-bottom: 6px; }
+  .desc { text-align: center; color: #888; font-size: 13px; margin-bottom: 28px; }
+
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 960px; margin: 0 auto; }
+  @media (max-width: 640px) { .compare { grid-template-columns: 1fr; } }
+
+  .panel { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+  .panel h2 { font-size: 15px; color: #1a1a1a; margin-bottom: 4px; }
+  .panel .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-bottom: 12px; }
+  .badge.current { background: #fef3cd; color: #856404; }
+  .badge.better  { background: #d1f2eb; color: #0e6655; }
+
+  .panel p { font-size: 13px; color: #666; margin-bottom: 14px; line-height: 1.7; }
+
+  /* 方式一：当前的本地输入框 */
+  .local-input-row { display: flex; gap: 8px; }
+  .local-input { flex: 1; padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+  .local-btn { padding: 8px 16px; background: #aaa; color: #fff; border: none; border-radius: 6px; font-size: 14px; cursor: pointer; }
+  .local-note { font-size: 12px; color: #e74c3c; margin-top: 8px; }
+
+  /* 方式二：飞书表单嵌入 */
+  .form-embed { width: 100%; height: 480px; border: none; border-radius: 8px; background: #f9f9f9; }
+  .form-btn-row { margin-top: 12px; }
+  .form-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px;
+               background: #2c7be5; color: #fff; border-radius: 8px; text-decoration: none;
+               font-size: 14px; font-weight: 500; transition: background 0.2s; }
+  .form-btn:hover { background: #1a6fd4; }
+  .form-icon { font-size: 18px; }
+
+  /* 流程说明 */
+  .flow { margin-top: 14px; background: #f8f9fa; border-radius: 6px; padding: 12px 16px; }
+  .flow-title { font-size: 12px; font-weight: 600; color: #555; margin-bottom: 6px; }
+  .flow-step { font-size: 12px; color: #666; margin: 3px 0; }
+  .flow-step.ok { color: #27ae60; }
+  .flow-step.warn { color: #e74c3c; }
+</style>
+</head>
+<body>
+
+<h1>💡 主题征集 · 两种实现方式对比</h1>
+<p class="desc">帮助理解当前方案的局限和更好的替代方案</p>
+
+<div class="compare">
+
+  <!-- 方式一：当前方案 -->
+  <div class="panel">
+    <h2>方式一：当前方案（本地存储）</h2>
+    <span class="badge current">⚠️ 当前实现</span>
+    <p>输入框存到浏览器 localStorage，<strong>只在你自己的浏览器里</strong>，LiWork 服务器和飞书多维表格都看不到，要等次日定时任务才能间接同步（但实际上定时任务也无法读 localStorage）。</p>
+
+    <div class="local-input-row">
+      <input class="local-input" type="text" placeholder="固态电池、端侧AI…" />
+      <button class="local-btn" onclick="fakeSubmit()">提交</button>
+    </div>
+    <p class="local-note" id="localNote"></p>
+
+    <div class="flow">
+      <div class="flow-title">数据流向：</div>
+      <div class="flow-step ok">✅ 存入浏览器 localStorage</div>
+      <div class="flow-step ok">✅ 页面上显示"已提交"标签</div>
+      <div class="flow-step warn">❌ 换个浏览器/设备就消失</div>
+      <div class="flow-step warn">❌ LiWork 定时任务无法读取</div>
+      <div class="flow-step warn">❌ 飞书多维表格永远看不到</div>
+    </div>
+  </div>
+
+  <!-- 方式二：飞书表单 -->
+  <div class="panel">
+    <h2>方式二：飞书表单（推荐）</h2>
+    <span class="badge better">✅ 建议替换</span>
+    <p>点击按钮直接跳转飞书表单，填写后<strong>实时写入多维表格</strong>，定时任务次日直接读取，无需任何后端。表单是你已有的那个，可以随时在飞书里修改字段。</p>
+
+    <!-- 跳转按钮 -->
+    <div class="form-btn-row">
+      <a class="form-btn"
+         href="https://li.feishu.cn/share/base/form/shrcnTegXEPSlph3SMP6mqIThQ8"
+         target="_blank">
+        <span class="form-icon">📝</span>
+        打开飞书表单填写主题
+      </a>
+    </div>
+
+    <p style="font-size:12px;color:#888;margin-top:10px;">
+      点击后会在新标签页打开飞书表单 → 填写期望主题 → 提交 → 实时写入多维表格
+    </p>
+
+    <div class="flow">
+      <div class="flow-title">数据流向：</div>
+      <div class="flow-step ok">✅ 用户填写飞书表单</div>
+      <div class="flow-step ok">✅ 实时写入飞书多维表格「主题征集」表</div>
+      <div class="flow-step ok">✅ 次日 09:00 定时任务直接读取</div>
+      <div class="flow-step ok">✅ LLM 展开关键词纳入当天搜索</div>
+      <div class="flow-step ok">✅ 任何设备都有效，不依赖浏览器</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function fakeSubmit() {
+  const note = document.getElementById('localNote');
+  note.textContent = '⚠️ 已存入你的浏览器，但 LiWork 和飞书看不到这条数据';
+}
+</script>
+</body>
+</html>
