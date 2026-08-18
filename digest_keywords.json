@@ -1,0 +1,139 @@
+{
+  "topics": [
+    {
+      "name": "汽车增程器",
+      "weight": 1.0,
+      "keywords": [
+        "range extender", "EREV", "extended range", "extended-range EV",
+        "Atkinson cycle", "range-extender engine", "auxiliary power unit",
+        "series hybrid", "series-hybrid powertrain",
+        "增程器", "增程式", "增程发动机", "增程器热效率",
+        "增程器NVH", "增程器控制策略", "大电池增程", "增程技术"
+      ],
+      "brands": ["理想", "问界", "深蓝", "零跑", "赛力斯", "小鹏鲲鹏", "东安动力", "AITO", "李想"]
+    },
+    {
+      "name": "CAD 与 AI 技术",
+      "weight": 1.0,
+      "keywords": [
+        "text-to-CAD", "text to cad", "AI CAD", "LLM CAD", "CAD-LLM",
+        "generative CAD", "programmatic CAD", "sketch to CAD", "sketch-based CAD",
+        "B-rep generation", "BREP generation", "CAD code generation", "CAD generation",
+        "参数化CAD自动化", "文本生成CAD", "AI建模", "AI 生成CAD", "自然语言生成CAD",
+        "build123d", "CadQuery", "FreeCAD", "OpenSCAD", "SolveSpace",
+        "OpenCASCADE", "OCCT", "NURBS", "BREP", "B-rep", "STEP", "DFM",
+        "Python CAD", "parametric CAD", "参数化CAD", "CAD 自动化",
+        "generative design", "computational design", "Onshape", "CAD automation"
+      ]
+    }
+  ],
+  "track_projects": [
+    "zoo",
+    "CADmium", "Text2CAD", "BrepGen", "CADGen",
+    "build123d", "CadQuery", "FreeCAD", "nTopology", "DraftAid"
+  ],
+  "deprioritize": ["纯视觉 text-to-3D 展示", "仅网格无 B-Rep 的 3D 生成", "游戏/电商用 text-to-3D"],
+
+  "rss_feeds": [
+    {
+      "name": "CarNewsChina",
+      "url": "https://carnewschina.com/feed/",
+      "lang": "en",
+      "weight": 1.0,
+      "keywords": ["range extender", "EREV", "extended-range", "EREV SUV",
+                   "Li Auto", "Aito", "Seres", "series hybrid"]
+    },
+    {
+      "name": "InsideEVs",
+      "url": "https://insideevs.com/feed/",
+      "lang": "en",
+      "weight": 1.0,
+      "keywords": ["range extender", "extended range", "EREV", "series hybrid",
+                   "Li Auto", "Aito", "EPA range", "EREV"]
+    },
+    {
+      "name": "Electrek",
+      "url": "https://electrek.co/feed/",
+      "lang": "en",
+      "weight": 0.8,
+      "keywords": ["range extender", "EREV", "series hybrid", "extended-range"]
+    },
+    {
+      "name": "CleanTechnica",
+      "url": "https://cleantechnica.com/feed/",
+      "lang": "en",
+      "weight": 0.8,
+      "keywords": ["range extender", "EREV", "series hybrid", "plug-in hybrid", "Li Auto"]
+    },
+    {
+      "name": "The Drive",
+      "url": "https://www.thedrive.com/feed",
+      "lang": "en",
+      "weight": 0.8,
+      "keywords": ["range extender", "EREV", "series hybrid", "Li Auto", "Aito", "extended-range"]
+    },
+    {
+      "name": "SolidSmack",
+      "url": "https://solidsmack.com/feed/",
+      "lang": "en",
+      "weight": 1.0,
+      "keywords": ["CAD", "generative design", "parametric CAD", "B-rep",
+                   "NURBS", "DFM", "OpenCASCADE", "CAD automation", "build123d"]
+    },
+    {
+      "name": "3D Printing Industry",
+      "url": "https://3dprintingindustry.com/feed/",
+      "lang": "en",
+      "weight": 0.9,
+      "keywords": ["CAD", "generative design", "parametric CAD", "B-rep", "NURBS"]
+    },
+    {
+      "name": "DEVELOP3D",
+      "url": "https://www.develop3d.com/feed/",
+      "lang": "en",
+      "weight": 1.0,
+      "keywords": ["CAD", "generative design", "computational design",
+                   "Onshape", "NURBS", "B-rep", "CAD automation"]
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "lang": "en",
+      "weight": 0.9,
+      "keywords": ["text-to-CAD", "CAD-LLM", "LLM CAD", "generative CAD",
+                   "B-rep generation", "AI CAD", "CAD generation"]
+    },
+    {
+      "name": "量子位 (QbitAI)",
+      "url": "https://www.qbitai.com/feed",
+      "lang": "zh",
+      "weight": 0.9,
+      "keywords": ["增程", "增程式", "增程器", "AI建模", "CAD", "文本生成CAD", "工业设计软件"]
+    }
+  ],
+
+  "reddit_subreddits": [],
+
+  "arxiv_categories": [
+    {
+      "name": "cs.CG (Computational Geometry)",
+      "category": "cs.CG",
+      "weight": 0.9,
+      "keywords": ["CAD", "B-rep", "BREP", "NURBS", "sketch", "parametric",
+                   "solid modeling", "geometric", "CAD model", "feature recognition"]
+    },
+    {
+      "name": "cs.GR (Graphics)",
+      "category": "cs.GR",
+      "weight": 0.8,
+      "keywords": ["text-to-CAD", "CAD generation", "B-rep generation",
+                   "generative CAD", "sketch-based CAD", "CAD-LLM"]
+    },
+    {
+      "name": "cs.AI / cs.LG",
+      "category": "cs.AI",
+      "weight": 0.7,
+      "keywords": ["LLM CAD", "CAD-LLM", "programmatic CAD", "CAD code generation", "language model CAD"]
+    }
+  ]
+}

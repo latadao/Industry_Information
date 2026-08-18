@@ -1,0 +1,55 @@
+name: Daily Industry Digest
+
+on:
+  schedule:
+    # 每天北京时间 09:00 执行（UTC 01:00）
+    - cron: '0 1 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # 推送 gh-pages 需要
+      actions: write        # 触发 repository_dispatch 需要
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install requests feedparser
+
+      - name: Run digest
+        env:
+          # 飞书推送
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
+          # GitHub 采集
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          # LLM 摘要
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          # 每日 Top N
+          DIGEST_TOP_N: '3'
+          # GitHub Pages 网页
+          PAGES_URL: ${{ secrets.PAGES_URL }}
+          GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+          GITHUB_REPO: ${{ github.repository }}
+          # 飞书多维表格（数据存储 + 主题征集）
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          BITABLE_APP_TOKEN: ${{ secrets.BITABLE_APP_TOKEN }}
+          BITABLE_INFO_TABLE_ID: ${{ secrets.BITABLE_INFO_TABLE_ID }}
+          BITABLE_TOPIC_TABLE_ID: ${{ secrets.BITABLE_TOPIC_TABLE_ID }}
+          # 主题征集表单链接（卡片底部按钮用）
+          BITABLE_FORM_URL: ${{ secrets.BITABLE_FORM_URL }}
+        run: |
+          python digest.py
