@@ -30,6 +30,36 @@
         "summary": "是一款基于浏览器的开源参数化3D CAD工具  \n支持用户与授权智能代理进行本地优先的协同设计  \n通过OpenCascade WASM实现高性能三维建模运算",
         "score": 9.32,
         "likes": 0
+      },
+      {
+        "id": "20260819-001",
+        "date": "2026-08-19",
+        "title": "amitshekhariitbhu/llm-inference-engineering",
+        "source": "GitHub",
+        "url": "https://github.com/amitshekhariitbhu/llm-inference-engineering",
+        "summary": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
+        "score": 9.77,
+        "likes": 0
+      },
+      {
+        "id": "20260819-002",
+        "date": "2026-08-19",
+        "title": "etjones/scad123d",
+        "source": "GitHub",
+        "url": "https://github.com/etjones/scad123d",
+        "summary": "Import OpenSCAD files as native build123d BRep geometry, via OpenSCAD's flattened CSG export",
+        "score": 9.46,
+        "likes": 0
+      },
+      {
+        "id": "20260819-003",
+        "date": "2026-08-19",
+        "title": "tyeurada/edrEvasionWorkshop",
+        "source": "GitHub",
+        "url": "https://github.com/tyeurada/edrEvasionWorkshop",
+        "summary": "Workshop materials for “Step-by-Step Malware Development: Evading EDR from Loaders to the Kernel” presented at DEF CON 34 and BSidesLV 2026. Covers malware development, EDR Architecture, EDR evasion, ",
+        "score": 9.35,
+        "likes": 0
       }
     ]
   }
