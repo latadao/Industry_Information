@@ -34,31 +34,31 @@
       {
         "id": "20260819-001",
         "date": "2026-08-19",
-        "title": "amitshekhariitbhu/llm-inference-engineering",
+        "title": "jokroese/freecad-code-workbench",
         "source": "GitHub",
-        "url": "https://github.com/amitshekhariitbhu/llm-inference-engineering",
-        "summary": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
-        "score": 9.77,
+        "url": "https://github.com/jokroese/freecad-code-workbench",
+        "summary": "该工具是FreeCAD的代码工作台插件，支持原生运行build123d和CadQuery脚本。  \n用户可在FreeCAD内直接编写和执行参数化3D建模代码，提升设计效率。  \n通过集成Python接口，将外部建模库无缝嵌入FreeCAD的环境实现原生调用。",
+        "score": 9.21,
         "likes": 0
       },
       {
         "id": "20260819-002",
         "date": "2026-08-19",
-        "title": "etjones/scad123d",
+        "title": "pzfreo/draftwright",
         "source": "GitHub",
-        "url": "https://github.com/etjones/scad123d",
-        "summary": "Import OpenSCAD files as native build123d BRep geometry, via OpenSCAD's flattened CSG export",
-        "score": 9.46,
+        "url": "https://github.com/pzfreo/draftwright",
+        "summary": "是什么：pzfreo/draftwright 是自动生成技术图纸的工具。  \n能做什么：可将 build123d 和 STEP 文件自动转为标准工程图纸。  \n怎么做到：基于参数化建模与自动化绘图算法实现精准图纸生成。",
+        "score": 8.67,
         "likes": 0
       },
       {
         "id": "20260819-003",
         "date": "2026-08-19",
-        "title": "tyeurada/edrEvasionWorkshop",
+        "title": "Alfredoalv13/shapr3d-mcp",
         "source": "GitHub",
-        "url": "https://github.com/tyeurada/edrEvasionWorkshop",
-        "summary": "Workshop materials for “Step-by-Step Malware Development: Evading EDR from Loaders to the Kernel” presented at DEF CON 34 and BSidesLV 2026. Covers malware development, EDR Architecture, EDR evasion, ",
-        "score": 9.35,
+        "url": "https://github.com/Alfredoalv13/shapr3d-mcp",
+        "summary": "是什么：Shapr3D的MCP服务器，基于AI的CAD建模工具。  \n能做什么：实现AI驱动的三维设计与STEP文件高效交换。  \n怎么做到：集成build123d与OpenCascade引擎实现智能建模。",
+        "score": 8.63,
         "likes": 0
       }
     ]
