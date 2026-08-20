@@ -60,6 +60,36 @@
         "summary": "是什么：Shapr3D的MCP服务器，基于AI的CAD建模工具。  \n能做什么：实现AI驱动的三维设计与STEP文件高效交换。  \n怎么做到：集成build123d与OpenCascade引擎实现智能建模。",
         "score": 8.63,
         "likes": 0
+      },
+      {
+        "id": "20260820-001",
+        "date": "2026-08-20",
+        "title": "satan9394/dsh-cad-modeling",
+        "source": "GitHub",
+        "url": "https://github.com/satan9394/dsh-cad-modeling",
+        "summary": "参数化CAD建模工具，支持STEP格式与自然语言输入生成三维模型。  \n可将文本描述直接转换为可装配、可验证的CAD模型并导出多种3D格式。  \n基于深度学习实现自然语言到CAD几何的映射，结合装配约束与几何验证算法。",
+        "score": 9.53,
+        "likes": 0
+      },
+      {
+        "id": "20260820-002",
+        "date": "2026-08-20",
+        "title": "Phucreat/ai-2d-to-3d-cad",
+        "source": "GitHub",
+        "url": "https://github.com/Phucreat/ai-2d-to-3d-cad",
+        "summary": "该系统将2D CAD图纸自动转换为3D参数化CAD模型。  \n实现无需人工干预的二维到三维设计转化，提升工程设计效率。  \n基于多智能体AI框架结合Gemini、GPT-4o、Claude与CadQuery实现闭环视觉反馈。",
+        "score": 9.4,
+        "likes": 0
+      },
+      {
+        "id": "20260820-003",
+        "date": "2026-08-20",
+        "title": "HikmetBisen/chisel",
+        "source": "GitHub",
+        "url": "https://github.com/HikmetBisen/chisel",
+        "summary": "该工具基于Claude与CADQuery实现文本到3D模型的自动生成。  \n用户可通过自然语言描述直接获得可打印的3D零件模型。  \n利用Claude生成CADQuery代码，由OpenCascade内核验证并输出STL文件。",
+        "score": 8.06,
+        "likes": 0
       }
     ]
   }
