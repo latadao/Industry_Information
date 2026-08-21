@@ -90,6 +90,36 @@
         "summary": "该工具基于Claude与CADQuery实现文本到3D模型的自动生成。  \n用户可通过自然语言描述直接获得可打印的3D零件模型。  \n利用Claude生成CADQuery代码，由OpenCascade内核验证并输出STL文件。",
         "score": 8.06,
         "likes": 0
+      },
+      {
+        "id": "20260821-001",
+        "date": "2026-08-21",
+        "title": "etjones/scad123d",
+        "source": "GitHub",
+        "url": "https://github.com/etjones/scad123d",
+        "summary": "支持导入OpenSCAD文件为build123d原生BRep几何体  \n实现CAD设计文件在build123d中的高精度几何转换  \n通过OpenSCAD的扁平化CSG导出技术完成格式转换",
+        "score": 8.74,
+        "likes": 0
+      },
+      {
+        "id": "20260821-002",
+        "date": "2026-08-21",
+        "title": "Kulitorum/leparagliding-nurbs",
+        "source": "GitHub",
+        "url": "https://github.com/Kulitorum/leparagliding-nurbs",
+        "summary": "Kulitorum开发了用于滑翔伞设计的NURBS几何建模系统。  \n实现高精度气动外形建模与结构仿真一体化。  \n基于OCCT NURBS与AP242 STEP标准重构Fortran核心代码。",
+        "score": 8.19,
+        "likes": 0
+      },
+      {
+        "id": "20260821-003",
+        "date": "2026-08-21",
+        "title": "phantom-ascii/AstraPad",
+        "source": "GitHub",
+        "url": "https://github.com/phantom-ascii/AstraPad",
+        "summary": "AstraPad是一款专为Linux设计的开源四键宏键盘。  \n支持快捷操作与实时显示，提升Linux桌面效率。  \n基于RP2040芯片、KiCad/FreeCAD设计及自定义固件实现。",
+        "score": 8.17,
+        "likes": 0
       }
     ]
   }
