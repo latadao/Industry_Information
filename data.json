@@ -120,6 +120,36 @@
         "summary": "AstraPad是一款专为Linux设计的开源四键宏键盘。  \n支持快捷操作与实时显示，提升Linux桌面效率。  \n基于RP2040芯片、KiCad/FreeCAD设计及自定义固件实现。",
         "score": 8.17,
         "likes": 0
+      },
+      {
+        "id": "20260822-001",
+        "date": "2026-08-22",
+        "title": "tengfeizhang666/text2cad-rag",
+        "source": "GitHub",
+        "url": "https://github.com/tengfeizhang666/text2cad-rag",
+        "summary": "该工具基于RAG技术实现参数化CAD模型的智能生成。  \n可自动将自然语言描述转化为精确的工程CAD设计。  \n通过检索增强生成结合开源工作流与气静压多孔推力轴承支持实现。",
+        "score": 10.43,
+        "likes": 0
+      },
+      {
+        "id": "20260822-002",
+        "date": "2026-08-22",
+        "title": "nickthelegend/aibo-pet",
+        "source": "GitHub",
+        "url": "https://github.com/nickthelegend/aibo-pet",
+        "summary": "这是一个用Python参数化设计的拟真宠物机器人，外观为皮克斯风格台灯。  \n可通过语音交互并实现动态眼部表情与肢体动作，提供陪伴型智能体验。  \n基于ESP32-S3语音控制、舵机驱动与WS2812LED眼部显示，全靠Python实现CAD建模。",
+        "score": 8.44,
+        "likes": 0
+      },
+      {
+        "id": "20260822-003",
+        "date": "2026-08-22",
+        "title": "oyekamal/freecad-claude-house-designer",
+        "source": "GitHub",
+        "url": "https://github.com/oyekamal/freecad-claude-house-designer",
+        "summary": "主体是基于Claude AI的FreeCAD房屋设计工具。  \n可实现通过AI自动生成并验证真实住宅的结构与BIM设计。  \n利用17项技能的Claude代码库集成MCP实现自动化建筑设计。",
+        "score": 8.24,
+        "likes": 0
       }
     ]
   }
