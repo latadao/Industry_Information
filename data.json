@@ -150,6 +150,36 @@
         "summary": "主体是基于Claude AI的FreeCAD房屋设计工具。  \n可实现通过AI自动生成并验证真实住宅的结构与BIM设计。  \n利用17项技能的Claude代码库集成MCP实现自动化建筑设计。",
         "score": 8.24,
         "likes": 0
+      },
+      {
+        "id": "20260823-001",
+        "date": "2026-08-23",
+        "title": "Itsvkid/CAD-Projects",
+        "source": "GitHub",
+        "url": "https://github.com/Itsvkid/CAD-Projects",
+        "summary": "是基于CadQuery/Python的航天部件参数化CAD生成工具集。  \n可自动化生成高精度航天零部件三维模型，提升设计效率。  \n通过Python脚本定义参数化几何规则，实现CAD模型的智能生成。",
+        "score": 8.78,
+        "likes": 0
+      },
+      {
+        "id": "20260823-002",
+        "date": "2026-08-23",
+        "title": "key2/buildjs3d",
+        "source": "GitHub",
+        "url": "https://github.com/key2/buildjs3d",
+        "summary": "是什么：基于build123d的JavaScript代码CAD领域专用语言。  \n能做什么：可在浏览器中直接生成参数化3D几何模型。  \n怎么做到：通过QuickJS引擎原生运行OCCT几何内核实现建模。",
+        "score": 8.73,
+        "likes": 0
+      },
+      {
+        "id": "20260823-003",
+        "date": "2026-08-23",
+        "title": "TheRedJMMonkey/bulk_convert_iges_to_step",
+        "source": "GitHub",
+        "url": "https://github.com/TheRedJMMonkey/bulk_convert_iges_to_step",
+        "summary": "该工具是一个用于批量转换IGES文件的FreeCAD宏程序。  \n可高效将大量IGES格式文件批量转为STEP格式，提升工程数据互操作性。  \n基于FreeCAD的开源几何引擎实现自动化格式转换。",
+        "score": 8.45,
+        "likes": 0
       }
     ]
   }
