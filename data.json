@@ -181,6 +181,38 @@
         "score": 8.45,
         "likes": 0
       }
+    ],
+    "2026-W35": [
+      {
+        "id": "20260824-001",
+        "date": "2026-08-24",
+        "title": "brianmk/freecad",
+        "source": "GitHub",
+        "url": "https://github.com/brianmk/freecad",
+        "summary": "是FreeCAD的一个分支项目，专注于Vulkan图形接口的实现与工具开发。  \n可提升3D建模软件的图形渲染性能与跨平台兼容性。  \n通过集成Vulkan API替代传统图形后端实现高效渲染与硬件加速。",
+        "score": 7.66,
+        "likes": 0
+      },
+      {
+        "id": "20260824-002",
+        "date": "2026-08-24",
+        "title": "Mithran-MV/sprocket-forge",
+        "source": "GitHub",
+        "url": "https://github.com/Mithran-MV/sprocket-forge",
+        "summary": "是一款基于浏览器的参数化滚子链轮生成器  \n可直接输出多种格式的精确链轮模型与可切割G代码  \n采用Web端参数化算法实时生成几何数据",
+        "score": 7.59,
+        "likes": 0
+      },
+      {
+        "id": "20260824-003",
+        "date": "2026-08-24",
+        "title": "MortenVajhoj/GSoC-Project-2026",
+        "source": "GitHub",
+        "url": "https://github.com/MortenVajhoj/GSoC-Project-2026",
+        "summary": "主体是FreeCAD技术绘图工作台的用户体验优化项目  \n提升用户在工程绘图中的操作效率与交互体验  \n通过改进界面布局与交互流程实现用户体验优化",
+        "score": 7.57,
+        "likes": 0
+      }
     ]
   }
 }
