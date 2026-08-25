@@ -212,6 +212,36 @@
         "summary": "主体是FreeCAD技术绘图工作台的用户体验优化项目  \n提升用户在工程绘图中的操作效率与交互体验  \n通过改进界面布局与交互流程实现用户体验优化",
         "score": 7.57,
         "likes": 0
+      },
+      {
+        "id": "20260825-001",
+        "date": "2026-08-25",
+        "title": "duty1g/x64dbg-mcp-server",
+        "source": "GitHub",
+        "url": "https://github.com/duty1g/x64dbg-mcp-server",
+        "summary": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg progra",
+        "score": 10.7,
+        "likes": 0
+      },
+      {
+        "id": "20260825-002",
+        "date": "2026-08-25",
+        "title": "aaronsb/freecad-cli",
+        "source": "GitHub",
+        "url": "https://github.com/aaronsb/freecad-cli",
+        "summary": "A command line for FreeCAD, in the app and in your terminal. Type a command or click to place it. Drive a running session from a shell, or script it.",
+        "score": 8.9,
+        "likes": 0
+      },
+      {
+        "id": "20260825-003",
+        "date": "2026-08-25",
+        "title": "jbstewart/rock-wall-parts",
+        "source": "GitHub",
+        "url": "https://github.com/jbstewart/rock-wall-parts",
+        "summary": "Parametric code-CAD parts library for Rock Wall Forge & Rock Wall Manufacturing — build123d part scripts, imported cut artwork, and DXF/STEP outputs for CNC plasma, router, and 3D-print fabrication. E",
+        "score": 8.8,
+        "likes": 0
       }
     ]
   }
