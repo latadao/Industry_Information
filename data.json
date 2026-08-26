@@ -242,6 +242,36 @@
         "summary": "Parametric code-CAD parts library for Rock Wall Forge & Rock Wall Manufacturing — build123d part scripts, imported cut artwork, and DXF/STEP outputs for CNC plasma, router, and 3D-print fabrication. E",
         "score": 8.8,
         "likes": 0
+      },
+      {
+        "id": "20260826-001",
+        "date": "2026-08-26",
+        "title": "JavierDevPro/FreeCAD-Generator",
+        "source": "GitHub",
+        "url": "https://github.com/JavierDevPro/FreeCAD-Generator",
+        "summary": "这是一个基于自然语言生成参数化CAD零件的工具。  \n可将文字描述自动转换为可编辑的FreeCAD三维模型。  \n通过自然语言解析转为Python脚本驱动FreeCAD建模。",
+        "score": 8.75,
+        "likes": 0
+      },
+      {
+        "id": "20260826-002",
+        "date": "2026-08-26",
+        "title": "JerrettDavis/flipfill-cad",
+        "source": "GitHub",
+        "url": "https://github.com/JerrettDavis/flipfill-cad",
+        "summary": "主体是开源的STEP/BRep硬件逆向填充生成工具flipfill-cad。  \n可实现基于间隙优先的封闭结构自动生成，提升硬件设计效率。  \n通过命令行接口与MIT许可的算法，实现几何间隙分析与逆向填充。",
+        "score": 7.98,
+        "likes": 0
+      },
+      {
+        "id": "20260826-003",
+        "date": "2026-08-26",
+        "title": "jacquesh82/FreeCAD-ClaudeCode",
+        "source": "GitHub",
+        "url": "https://github.com/jacquesh82/FreeCAD-ClaudeCode",
+        "summary": "是FreeCAD的AI插件，集成Claude Code对话面板。  \n可实现通过自然语言指令直接操控FreeCAD进行建模与设计。  \n基于订阅认证与MCP工具，调用AI代理执行命令并交互响应。",
+        "score": 7.96,
+        "likes": 0
       }
     ]
   }
