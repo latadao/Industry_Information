@@ -272,6 +272,36 @@
         "summary": "是FreeCAD的AI插件，集成Claude Code对话面板。  \n可实现通过自然语言指令直接操控FreeCAD进行建模与设计。  \n基于订阅认证与MCP工具，调用AI代理执行命令并交互响应。",
         "score": 7.96,
         "likes": 0
+      },
+      {
+        "id": "20260827-001",
+        "date": "2026-08-27",
+        "title": "Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc",
+        "source": "GitHub",
+        "url": "https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc",
+        "summary": "Official MiniMax-H3 8-step PDD Acc LoRAs (alibaba-pai) in ComfyUI: LoRA + parallel-decoding head bank, euler on trained sigmas, audio+video in 8 steps",
+        "score": 9.03,
+        "likes": 0
+      },
+      {
+        "id": "20260827-002",
+        "date": "2026-08-27",
+        "title": "artprinting3d-web/dfm-check",
+        "source": "GitHub",
+        "url": "https://github.com/artprinting3d-web/dfm-check",
+        "summary": "Design-for-manufacturing review as CI — meshes, OpenSCAD, CadQuery, KiCad and Klipper configs checked in the pull request, every finding cited to a rule id.",
+        "score": 8.93,
+        "likes": 0
+      },
+      {
+        "id": "20260827-003",
+        "date": "2026-08-27",
+        "title": "kharmanskyi/open-steps",
+        "source": "GitHub",
+        "url": "https://github.com/kharmanskyi/open-steps",
+        "summary": "Skills that translate your coding agent's output into plain language: honest reports, straight verdicts, steps you can follow. MIT.",
+        "score": 8.83,
+        "likes": 0
       }
     ]
   }
