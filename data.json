@@ -302,6 +302,36 @@
         "summary": "Skills that translate your coding agent's output into plain language: honest reports, straight verdicts, steps you can follow. MIT.",
         "score": 8.83,
         "likes": 0
+      },
+      {
+        "id": "20260828-001",
+        "date": "2026-08-28",
+        "title": "jimcortez/bevel-cad",
+        "source": "GitHub",
+        "url": "https://github.com/jimcortez/bevel-cad",
+        "summary": "这是一个用于渲染CADQuery和Build123D项目的工具包。  \n支持人类与AI高效可视化复杂三维设计模型。  \n基于Python生态集成几何引擎与渲染管线实现自动化生成。",
+        "score": 9.47,
+        "likes": 0
+      },
+      {
+        "id": "20260828-002",
+        "date": "2026-08-28",
+        "title": "alarin/smalldog",
+        "source": "GitHub",
+        "url": "https://github.com/alarin/smalldog",
+        "summary": "是一款12自由度3D打印四足机器人，采用ST3215总线舵机驱动。  \n可实现低成本高灵活性的仿生运动与快速原型开发。  \n基于CadQuery参数化建模、FEA仿真与ROS 2/MuJoCo协同仿真实现。",
+        "score": 8.7,
+        "likes": 0
+      },
+      {
+        "id": "20260828-003",
+        "date": "2026-08-28",
+        "title": "ShubhamGawande191/roboparts",
+        "source": "GitHub",
+        "url": "https://github.com/ShubhamGawande191/roboparts",
+        "summary": "是开源机器人零件生成工具，专为打印固定机器人结构的部件设计。  \n可自动生成相机支架、夹爪指、传感器托架等精准适配的3D打印零件。  \n基于build123d构建参数化接口库，内置公差级清晰间隙设计。",
+        "score": 8.36,
+        "likes": 0
       }
     ]
   }
