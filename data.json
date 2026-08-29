@@ -332,6 +332,36 @@
         "summary": "是开源机器人零件生成工具，专为打印固定机器人结构的部件设计。  \n可自动生成相机支架、夹爪指、传感器托架等精准适配的3D打印零件。  \n基于build123d构建参数化接口库，内置公差级清晰间隙设计。",
         "score": 8.36,
         "likes": 0
+      },
+      {
+        "id": "20260829-001",
+        "date": "2026-08-29",
+        "title": "codediba/3d-design-review-assistant",
+        "source": "GitHub",
+        "url": "https://github.com/codediba/3d-design-review-assistant",
+        "summary": "主体是3D CAD设计评审后端系统  \n可自动分析设计可制造性并生成AI解释报告  \n基于OpenCascade解析STEP几何，结合规则引擎与AI层实现智能评审",
+        "score": 9.49,
+        "likes": 0
+      },
+      {
+        "id": "20260829-002",
+        "date": "2026-08-29",
+        "title": "MossLouvan/webshooter",
+        "source": "GitHub",
+        "url": "https://github.com/MossLouvan/webshooter",
+        "summary": "手腕穿戴式织物喷胶装置  \n可精准喷涂织物实现快速粘合  \n基于CadQuery参数化设计与开放式Mk3结构",
+        "score": 8.42,
+        "likes": 0
+      },
+      {
+        "id": "20260829-003",
+        "date": "2026-08-29",
+        "title": "QymIs-Tech/QymCAD",
+        "source": "GitHub",
+        "url": "https://github.com/QymIs-Tech/QymCAD",
+        "summary": "QymIs-Tech开发了基于OpenCASCADE的参数化3D CAD系统。  \n支持高精度几何建模与实时设计修改，提升工程设计效率。  \n采用真实B-rep内核OpenCASCADE实现精确实体建模与参数驱动。",
+        "score": 8.32,
+        "likes": 0
       }
     ]
   }
