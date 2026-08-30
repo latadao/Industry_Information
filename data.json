@@ -362,6 +362,36 @@
         "summary": "QymIs-Tech开发了基于OpenCASCADE的参数化3D CAD系统。  \n支持高精度几何建模与实时设计修改，提升工程设计效率。  \n采用真实B-rep内核OpenCASCADE实现精确实体建模与参数驱动。",
         "score": 8.32,
         "likes": 0
+      },
+      {
+        "id": "20260830-001",
+        "date": "2026-08-30",
+        "title": "Ehsan-Roohi/Aerospace-Structures",
+        "source": "GitHub",
+        "url": "https://github.com/Ehsan-Roohi/Aerospace-Structures",
+        "summary": "这是为MIE 446航天结构机翼项目设计的参数化CADQuery入门模板。  \n可快速生成可调参数的机翼结构三维模型，提升设计效率。  \n基于CadQuery参数化建模语言，兼容Colab云端开发环境。",
+        "score": 8.62,
+        "likes": 0
+      },
+      {
+        "id": "20260830-002",
+        "date": "2026-08-30",
+        "title": "donghzs/vermes-mod-cadir",
+        "source": "GitHub",
+        "url": "https://github.com/donghzs/vermes-mod-cadir",
+        "summary": "Vermes-CAD-IR 是一个可插拔的 LLM 契约建模模块。  \n可将自然语言需求自动转为精确 3D 几何模型并验证。  \n通过 LLM 生成 JSON 契约，经确定性编译驱动 build123d 输出 STEP 文件。",
+        "score": 8.45,
+        "likes": 0
+      },
+      {
+        "id": "20260830-003",
+        "date": "2026-08-30",
+        "title": "KilowattSynthesis/tiny-assorted-cad",
+        "source": "GitHub",
+        "url": "https://github.com/KilowattSynthesis/tiny-assorted-cad",
+        "summary": "是什么：KilowattSynthesis/tiny-assorted-cad 是一组轻量级 123D CAD 项目集合。  \n能做什么：支持快速构建小型 CAD 设计，提升原型开发效率。  \n怎么做到：采用精简代码与模块化结构实现高效编译与部署。",
+        "score": 8.01,
+        "likes": 0
       }
     ]
   }
