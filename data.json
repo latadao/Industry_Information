@@ -393,6 +393,38 @@
         "score": 8.01,
         "likes": 0
       }
+    ],
+    "2026-W36": [
+      {
+        "id": "20260831-001",
+        "date": "2026-08-31",
+        "title": "wavtechyukky/LeapSinger",
+        "source": "GitHub",
+        "url": "https://github.com/wavtechyukky/LeapSinger",
+        "summary": "Fast singing-voice acoustic model: harmonic + noise excitation refined into a mel by a 1-step rectified flow (bundled NHVSing vocoder). Multi-speaker + style control; ONNX/OpenUTAU export.",
+        "score": 8.83,
+        "likes": 0
+      },
+      {
+        "id": "20260831-002",
+        "date": "2026-08-31",
+        "title": "alphaparkinc/genpark-reinforcement-learning-math-reasoning-synthesizer-skill",
+        "source": "GitHub",
+        "url": "https://github.com/alphaparkinc/genpark-reinforcement-learning-math-reasoning-synthesizer-skill",
+        "summary": "RL mathematical reasoning synthesizer & step-by-step theorem prover (DeepSeek-R1 style)",
+        "score": 8.4,
+        "likes": 0
+      },
+      {
+        "id": "20260831-003",
+        "date": "2026-08-31",
+        "title": "alphaparkinc/genpark-iterative-multi-step-web-research-synthesizer-skill",
+        "source": "GitHub",
+        "url": "https://github.com/alphaparkinc/genpark-iterative-multi-step-web-research-synthesizer-skill",
+        "summary": "Iterative multi-step web research synthesizer & deep citation co-pilot (Perplexity style)",
+        "score": 8.3,
+        "likes": 0
+      }
     ]
   }
 }
