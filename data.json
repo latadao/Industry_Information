@@ -424,6 +424,36 @@
         "summary": "Iterative multi-step web research synthesizer & deep citation co-pilot (Perplexity style)",
         "score": 8.3,
         "likes": 0
+      },
+      {
+        "id": "20260901-001",
+        "date": "2026-09-01",
+        "title": "alphaparkinc/genpark-prompt-to-3d-cad-step-solid-generator-skill",
+        "source": "GitHub",
+        "url": "https://github.com/alphaparkinc/genpark-prompt-to-3d-cad-step-solid-generator-skill",
+        "summary": "是什么：AlphaParkInc开发的AI工具可将文本提示生成3D CAD模型。  \n能做什么：实现从自然语言描述直接创建可工程使用的STEP固体模型。  \n怎么做到：基于文本到CAD的深度学习模型合成B-Rep几何结构。",
+        "score": 9.81,
+        "likes": 0
+      },
+      {
+        "id": "20260901-002",
+        "date": "2026-09-01",
+        "title": "panzer199696-eng/ai-3d-print-kit",
+        "source": "GitHub",
+        "url": "https://github.com/panzer199696-eng/ai-3d-print-kit",
+        "summary": "AI代理根据文字描述自动生成可打印的3D模型  \n实现从自然语言到精准可制造STL文件的直接转换  \n基于build123d参数化CAD与数值间隙校验技术",
+        "score": 8.5,
+        "likes": 0
+      },
+      {
+        "id": "20260901-003",
+        "date": "2026-09-01",
+        "title": "LAU-MARS/opencascade-ts",
+        "source": "GitHub",
+        "url": "https://github.com/LAU-MARS/opencascade-ts",
+        "summary": "是什么：LAU-MARS/opencascade-ts 是 OpenCASCADE 的 TypeScript 绑定库。  \n能做什么：让 TypeScript 环境直接调用 CAD 几何计算功能。  \n怎么做到：通过 WebAssembly 封装 OpenCASCADE 核心并提供 TypeScript 接口。",
+        "score": 7.38,
+        "likes": 0
       }
     ]
   }
