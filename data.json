@@ -454,6 +454,26 @@
         "summary": "是什么：LAU-MARS/opencascade-ts 是 OpenCASCADE 的 TypeScript 绑定库。  \n能做什么：让 TypeScript 环境直接调用 CAD 几何计算功能。  \n怎么做到：通过 WebAssembly 封装 OpenCASCADE 核心并提供 TypeScript 接口。",
         "score": 7.38,
         "likes": 0
+      },
+      {
+        "id": "20260902-001",
+        "date": "2026-09-02",
+        "title": "Artkill24/opencad-ai",
+        "source": "GitHub",
+        "url": "https://github.com/Artkill24/opencad-ai",
+        "summary": "该工具将文本提示转换为参数化CAD模型  \n可直接生成精确可编辑的工程设计并导出多种格式  \n基于AI生成CadQuery代码实现参数化建模",
+        "score": 9.1,
+        "likes": 0
+      },
+      {
+        "id": "20260902-002",
+        "date": "2026-09-02",
+        "title": "Kevin-Ronn/cad-engineering-mcp",
+        "source": "GitHub",
+        "url": "https://github.com/Kevin-Ronn/cad-engineering-mcp",
+        "summary": "提供工程级CAD自动化服务的MCP服务器  \n实现几何分析、元件布局、可制造性验证与PCB一致性校验  \n基于专用算法引擎自动化处理CAD数据与制造规范匹配",
+        "score": 7.8,
+        "likes": 0
       }
     ]
   }
