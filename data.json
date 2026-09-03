@@ -474,6 +474,36 @@
         "summary": "提供工程级CAD自动化服务的MCP服务器  \n实现几何分析、元件布局、可制造性验证与PCB一致性校验  \n基于专用算法引擎自动化处理CAD数据与制造规范匹配",
         "score": 7.8,
         "likes": 0
+      },
+      {
+        "id": "20260903-001",
+        "date": "2026-09-03",
+        "title": "Anson2251/cad-drawing-to-model-skill",
+        "source": "GitHub",
+        "url": "https://github.com/Anson2251/cad-drawing-to-model-skill",
+        "summary": "将2D工程图纸转为参数化3D模型  \n支持通过自然语言修改现有CAD模型  \n基于build123d实现图纸解析与参数化建模",
+        "score": 7.98,
+        "likes": 0
+      },
+      {
+        "id": "20260903-002",
+        "date": "2026-09-03",
+        "title": "shushuyang231/frameshift-cad",
+        "source": "GitHub",
+        "url": "https://github.com/shushuyang231/frameshift-cad",
+        "summary": "该工具用于诊断文本到CAD生成中的坐标帧错误。  \n可精准定位并修正生成模型的几何结构偏移问题。  \n通过可执行的坐标帧干预机制实现误差检测与校正。",
+        "score": 7.78,
+        "likes": 0
+      },
+      {
+        "id": "20260903-003",
+        "date": "2026-09-03",
+        "title": "stekimboy/aeroforge-studio",
+        "source": "GitHub",
+        "url": "https://github.com/stekimboy/aeroforge-studio",
+        "summary": "AeroForge是一款基于物理的遥控飞机设计工作室。  \n可生成可直接打印的CAD模型，提升飞机设计效率。  \n结合Python、CadQuery与神经网络气动分析实现精准建模。",
+        "score": 7.74,
+        "likes": 0
       }
     ]
   }
