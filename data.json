@@ -504,6 +504,36 @@
         "summary": "AeroForge是一款基于物理的遥控飞机设计工作室。  \n可生成可直接打印的CAD模型，提升飞机设计效率。  \n结合Python、CadQuery与神经网络气动分析实现精准建模。",
         "score": 7.74,
         "likes": 0
+      },
+      {
+        "id": "20260904-001",
+        "date": "2026-09-04",
+        "title": "ds19974848-droid/cad-workbench",
+        "source": "GitHub",
+        "url": "https://github.com/ds19974848-droid/cad-workbench",
+        "summary": "参数化CAD工作台，支持快速开发与多平台集成  \n实现SVG识别与NX/FreeCAD无缝协同的高效建模能力  \n基于FastAPI后端与CadQuery模型构建前端SVG驱动架构",
+        "score": 8.16,
+        "likes": 0
+      },
+      {
+        "id": "20260904-002",
+        "date": "2026-09-04",
+        "title": "public-software/cad",
+        "source": "GitHub",
+        "url": "https://github.com/public-software/cad",
+        "summary": "是开源参数化CAD内核与应用套件，支持B-rep建模与CAM功能。  \n可实现高精度三维设计、加工路径生成与网格划分一体化。  \n基于开源B-rep内核与参数化算法，集成网格生成与CAM模块实现全流程支持。",
+        "score": 7.73,
+        "likes": 0
+      },
+      {
+        "id": "20260904-003",
+        "date": "2026-09-04",
+        "title": "bennysilverberg-cloud/BAES-system-sr",
+        "source": "GitHub",
+        "url": "https://github.com/bennysilverberg-cloud/BAES-system-sr",
+        "summary": "将STEP装配体转化为可查询的几何数据库  \n支持精确几何查询与体间接口分析  \n基于PostGIS实现自适应八叉树索引与B-Rep特征存储",
+        "score": 7.69,
+        "likes": 0
       }
     ]
   }
