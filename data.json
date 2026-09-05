@@ -534,6 +534,36 @@
         "summary": "将STEP装配体转化为可查询的几何数据库  \n支持精确几何查询与体间接口分析  \n基于PostGIS实现自适应八叉树索引与B-Rep特征存储",
         "score": 7.69,
         "likes": 0
+      },
+      {
+        "id": "20260905-001",
+        "date": "2026-09-05",
+        "title": "kelenlv/AI-CAD-FreeCAD",
+        "source": "GitHub",
+        "url": "https://github.com/kelenlv/AI-CAD-FreeCAD",
+        "summary": "开源AI辅助CAD工具，专为FreeCAD设计  \n提升机械设计效率，实现智能建模与优化  \n基于深度学习与参数化建模技术自动生成设计草案",
+        "score": 7.86,
+        "likes": 0
+      },
+      {
+        "id": "20260905-002",
+        "date": "2026-09-05",
+        "title": "The Jeep Wagoneer and Ram 1500 extended-range EVs face another delay",
+        "source": "RSS·Electrek",
+        "url": "https://electrek.co/2026/09/04/jeep-wagoneer-rams-extended-range-ev-face-another-delay/",
+        "summary": "吉普卫士和Ram 1500增程式电动车再度推迟上市。  \n将提供更长续航与燃油备用，提升用户长途使用体验。  \n采用插电式混合动力系统，结合电池与小排量发电机供电。",
+        "score": 7.12,
+        "likes": 0
+      },
+      {
+        "id": "20260905-003",
+        "date": "2026-09-05",
+        "title": "The Freelander 8 got 5,000 firm orders in 12 hours after the launch in China",
+        "source": "RSS·CarNewsChina",
+        "url": "https://carnewschina.com/2026/09/04/the-freelander-8-got-5000-firm-orders-in-12-hours-after-the-launch/",
+        "summary": "Freelander 8是一款818马力的全尺寸EREV SUV。  \n上市12小时获5000份订单，展现强劲市场吸引力。  \n依托高效增程电动系统与智能座舱技术实现热销。",
+        "score": 6.89,
+        "likes": 0
       }
     ]
   }
