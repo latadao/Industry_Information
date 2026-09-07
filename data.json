@@ -565,6 +565,38 @@
         "score": 6.89,
         "likes": 0
       }
+    ],
+    "2026-W37": [
+      {
+        "id": "20260907-001",
+        "date": "2026-09-07",
+        "title": "madushan1000/freecad-ocp-viewer",
+        "source": "GitHub",
+        "url": "https://github.com/madushan1000/freecad-ocp-viewer",
+        "summary": "这是一个命令行工具，用于在FreeCAD中可视化CadQuery或build123d项目。  \n它能无需图形界面直接预览参数化3D模型，提升开发调试效率。  \n基于FreeCAD的OCV模块解析Python脚本并渲染几何模型。",
+        "score": 9.66,
+        "likes": 0
+      },
+      {
+        "id": "20260907-002",
+        "date": "2026-09-07",
+        "title": "es-ua/multilang-keycaps",
+        "source": "GitHub",
+        "url": "https://github.com/es-ua/multilang-keycaps",
+        "summary": "参数化生成多语言MX键盘键帽的CAD模型  \n支持透明底座与黑色顶面双色打印及双语字符印刷  \n基于CadQuery实现参数化设计，适配Bambu Lab H2D/AMS多材料FDM打印",
+        "score": 8.73,
+        "likes": 0
+      },
+      {
+        "id": "20260907-003",
+        "date": "2026-09-07",
+        "title": "ogzyaman/cadquery-variant-generator",
+        "source": "GitHub",
+        "url": "https://github.com/ogzyaman/cadquery-variant-generator",
+        "summary": "主体是基于CSV表格批量生成参数化CAD模型的工具。  \n可高效自动化创建大量设计变体，提升工程迭代效率。  \n通过脚本解析CSV参数并调用CadQuery生成对应三维模型。",
+        "score": 8.69,
+        "likes": 0
+      }
     ]
   }
 }
