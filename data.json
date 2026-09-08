@@ -596,6 +596,36 @@
         "summary": "主体是基于CSV表格批量生成参数化CAD模型的工具。  \n可高效自动化创建大量设计变体，提升工程迭代效率。  \n通过脚本解析CSV参数并调用CadQuery生成对应三维模型。",
         "score": 8.69,
         "likes": 0
+      },
+      {
+        "id": "20260908-001",
+        "date": "2026-09-08",
+        "title": "Relaxed Memory Model Zoo: Ordering models by the inclusion of allowed behaviours",
+        "source": "HackerNews",
+        "url": "https://rmm-zoo.kissig.org/",
+        "summary": "是什么：Relaxed Memory Model Zoo 是一个内存序模型集合库。  \n能做什么：支持按允许行为的包含关系系统化比较不同内存模型。  \n怎么做到：通过形式化定义和偏序关系建模各模型的行为集。",
+        "score": 7.65,
+        "likes": 0
+      },
+      {
+        "id": "20260908-002",
+        "date": "2026-09-08",
+        "title": "Astra made Van Gogh in a single pre computed step of 5291 excalidraw shapes",
+        "source": "HackerNews",
+        "url": "https://twitter.com/hive_echo/status/2096848073033146580",
+        "summary": "Astra利用5291个Excalidraw形状预计算生成梵高风格图像  \n可一键生成高艺术性手绘风格视觉内容  \n通过预设形状库与算法组合实现风格化渲染",
+        "score": 7.56,
+        "likes": 0
+      },
+      {
+        "id": "20260908-003",
+        "date": "2026-09-08",
+        "title": "Huawei’s Aito rejects rumors of “time traveling” pre-made cars, files police report",
+        "source": "RSS·CarNewsChina",
+        "url": "https://carnewschina.com/2026/09/07/huaweis-aito-rejects-rumors-of-time-traveling-pre-made-cars-files-police-report/",
+        "summary": "Aito是华为与赛力斯合作的新能源汽车品牌。  \n澄清谣言并维护品牌信誉，保障消费者信任。  \n通过官方声明并报警处理不实信息传播。",
+        "score": 6.93,
+        "likes": 0
       }
     ]
   }
