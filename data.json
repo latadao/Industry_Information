@@ -626,6 +626,36 @@
         "summary": "Aito是华为与赛力斯合作的新能源汽车品牌。  \n澄清谣言并维护品牌信誉，保障消费者信任。  \n通过官方声明并报警处理不实信息传播。",
         "score": 6.93,
         "likes": 0
+      },
+      {
+        "id": "20260909-001",
+        "date": "2026-09-09",
+        "title": "I turn screen recordings into interactive step-by-step video guides",
+        "source": "HackerNews",
+        "url": "https://alexhints.com/",
+        "summary": "将屏幕录制视频转化为交互式分步操作指南  \n让用户通过点击步骤直接操作软件界面  \n基于AI识别界面元素并自动生成可交互的导航流程",
+        "score": 7.35,
+        "likes": 0
+      },
+      {
+        "id": "20260909-002",
+        "date": "2026-09-09",
+        "title": "INVOICE-PAYPAL-BTC-GHFD/repo-erev2q7m",
+        "source": "GitHub",
+        "url": "https://github.com/INVOICE-PAYPAL-BTC-GHFD/repo-erev2q7m",
+        "summary": "该资讯涉及通过PayPal处理比特币发票的支付系统。  \n实现比特币与法币的无缝结算，提升跨境支付效率。  \n利用区块链技术与PayPal的支付网关集成完成自动清算。",
+        "score": 7.2,
+        "likes": 0
+      },
+      {
+        "id": "20260909-003",
+        "date": "2026-09-09",
+        "title": "FreeBSD 14.5-Release",
+        "source": "HackerNews",
+        "url": "https://www.freebsd.org/releases/14.5R/announce/",
+        "summary": "FreeBSD 14.5 发布为开源操作系统新版本  \n提升系统稳定性与硬件兼容性，增强服务器与嵌入式应用性能  \n采用内核优化、驱动更新及安全补丁集成实现功能升级",
+        "score": 6.67,
+        "likes": 0
       }
     ]
   }
