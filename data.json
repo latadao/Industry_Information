@@ -666,6 +666,36 @@
         "summary": "小米在中国推出四款SkyNomad增程式SUV。  \n提供低至3.1万美元的高性价比电动出行方案。  \n采用增程式电动系统，兼顾续航与充电便利性。",
         "score": 5.76,
         "likes": 0
+      },
+      {
+        "id": "20260911-001",
+        "date": "2026-09-11",
+        "title": "Canada's defence industry steps into Europe's spotlight",
+        "source": "HackerNews",
+        "url": "https://www.cbc.ca/news/world/canada-defence-industry-europe-9.7336763",
+        "summary": "加拿大国防工业正成为欧洲国防合作的关键参与者。  \n提升欧洲武器供应链韧性并加速军备本土化生产。  \n通过技术转让、联合研发与产能协同实现深度产业整合。",
+        "score": 7.61,
+        "likes": 0
+      },
+      {
+        "id": "20260911-002",
+        "date": "2026-09-11",
+        "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
+        "source": "HackerNews",
+        "url": "https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images",
+        "summary": "利用卫星影像处理技术还原古代地表特征  \n可揭示被掩埋或风化的古代遗址与人文痕迹  \n通过多光谱分析与AI图像重建算法增强微弱历史信号",
+        "score": 7.2,
+        "likes": 0
+      },
+      {
+        "id": "20260911-003",
+        "date": "2026-09-11",
+        "title": "ana-beatriz-monteiro/ClassesEObjetosERevisao",
+        "source": "GitHub",
+        "url": "https://github.com/ana-beatriz-monteiro/ClassesEObjetosERevisao",
+        "summary": "是面向对象编程的课程内容复习资料  \n帮助学习者巩固类与对象的核心概念与应用  \n通过代码示例与结构化讲解实现知识回顾与理解",
+        "score": 7.12,
+        "likes": 0
       }
     ]
   }
